@@ -1,10 +1,10 @@
-# IdeaBox API
+# MemeBox API
 
 To be used with the React III lesson.
 
 ## Set Up
 
-Clone down this repo. (Do **NOT** nest it inside your IdeaBox repo!)
+Clone down this repo. (Do **NOT** nest it inside your MemeBox repo!)
 
 CD into this repo.
 
@@ -14,9 +14,9 @@ Run `node server.js` to start the server.
 
 ## Endpoints
 
-### GET all ideas
+### GET all memes
 
-URL: `http://localhost:3001/api/v1/ideas`
+URL: `http://localhost:3001/api/v1/memes`
 
 Sample response (200):
 
@@ -28,11 +28,11 @@ Sample response (200):
 ]
 ```
 
-### GET an idea by its id
+### GET an meme by its id
 
-URL: `http://localhost:3001/api/v1/ideas/:id`
+URL: `http://localhost:3001/api/v1/memes/:id`
 
-Sample URL: `http://localhost:3001/api/v1/ideas/3`
+Sample URL: `http://localhost:3001/api/v1/memes/3`
 
 Sample response (200):
 
@@ -43,12 +43,12 @@ Sample response (200):
 Sample response (404):
 
 ```js
-{message: 'No idea found with an id of 3'}
+{message: 'No meme found with an id of 3'}
 ```
 
-### POST a new idea
+### POST a new meme
 
-URL: `http://localhost:3001/api/v1/ideas`
+URL: `http://localhost:3001/api/v1/memes`
 
 Sample request:
 
@@ -65,7 +65,7 @@ Sample request:
 }
 ```
 
-Sample response (201): This is the idea that was submitted in the POST request
+Sample response (201): This is the meme that was submitted in the POST request
 
 ```js
   { id: 98623913021, title: 'Title', description: 'Description' }
@@ -91,16 +91,16 @@ Sample BAD response (422):
   { message: 'You are missing a required parameter of description' }
 ```
 
-### DELETE an idea
+### DELETE an meme
 
-URL: `http://localhost:3001/api/v1/ideas/:id`
+URL: `http://localhost:3001/api/v1/memes/:id`
 
-Sample URL: `http://localhost:3001/api/v1/ideas/2`
+Sample URL: `http://localhost:3001/api/v1/memes/2`
 
 Sample response (204): no content in the body, nothing to parse
 
 Sample BAD response (404):
 
 ```js
-{message: 'No idea found with an id of 2'}
+{message: 'No meme found with an id of 2'}
 ```
