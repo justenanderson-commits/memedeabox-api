@@ -1,10 +1,10 @@
 # MemeBox API
 
-To be used with the React III lesson.
+To be used with the Memedeabox App.
 
 ## Set Up
 
-Clone down this repo. (Do **NOT** nest it inside your MemeBox repo!)
+Clone down this repo. (Do **NOT** nest it inside your Memedeabox repo!)
 
 CD into this repo.
 
